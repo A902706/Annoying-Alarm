@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD1B3B0F28F87A660039CFBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B0E28F87A660039CFBB /* AppDelegate.swift */; };
+		FD1B3B1128F87A660039CFBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B1028F87A660039CFBB /* SceneDelegate.swift */; };
+		FD1B3B1328F87A660039CFBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B1228F87A660039CFBB /* ViewController.swift */; };
+		FD1B3B1628F87A660039CFBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1B3B1428F87A660039CFBB /* Main.storyboard */; };
+		FD1B3B1828F87A690039CFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1B3B1728F87A690039CFBB /* Assets.xcassets */; };
+		FD1B3B1B28F87A690039CFBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1B3B1928F87A690039CFBB /* LaunchScreen.storyboard */; };
+		FD1B3B2628F87A6A0039CFBB /* Annoying_AlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B2528F87A6A0039CFBB /* Annoying_AlarmTests.swift */; };
+		FD1B3B3028F87A6A0039CFBB /* Annoying_AlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B2F28F87A6A0039CFBB /* Annoying_AlarmUITests.swift */; };
+		FD1B3B3228F87A6A0039CFBB /* Annoying_AlarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B3128F87A6A0039CFBB /* Annoying_AlarmUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD1B3B2228F87A6A0039CFBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1B3B0328F87A660039CFBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1B3B0A28F87A660039CFBB;
+			remoteInfo = "Annoying Alarm";
+		};
+		FD1B3B2C28F87A6A0039CFBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1B3B0328F87A660039CFBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1B3B0A28F87A660039CFBB;
+			remoteInfo = "Annoying Alarm";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD1B3B0B28F87A660039CFBB /* Annoying Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Annoying Alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1B3B0E28F87A660039CFBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD1B3B1028F87A660039CFBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD1B3B1228F87A660039CFBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD1B3B1528F87A660039CFBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD1B3B1728F87A690039CFBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD1B3B1A28F87A690039CFBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD1B3B1C28F87A690039CFBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD1B3B2128F87A6A0039CFBB /* Annoying AlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Annoying AlarmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1B3B2528F87A6A0039CFBB /* Annoying_AlarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annoying_AlarmTests.swift; sourceTree = "<group>"; };
+		FD1B3B2B28F87A6A0039CFBB /* Annoying AlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Annoying AlarmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1B3B2F28F87A6A0039CFBB /* Annoying_AlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annoying_AlarmUITests.swift; sourceTree = "<group>"; };
+		FD1B3B3128F87A6A0039CFBB /* Annoying_AlarmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annoying_AlarmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD1B3B0828F87A660039CFBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1B3B1E28F87A6A0039CFBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1B3B2828F87A6A0039CFBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD1B3B0228F87A660039CFBB = {
+			isa = PBXGroup;
+			children = (
+				FD1B3B0D28F87A660039CFBB /* Annoying Alarm */,
+				FD1B3B2428F87A6A0039CFBB /* Annoying AlarmTests */,
+				FD1B3B2E28F87A6A0039CFBB /* Annoying AlarmUITests */,
+				FD1B3B0C28F87A660039CFBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD1B3B0C28F87A660039CFBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD1B3B0B28F87A660039CFBB /* Annoying Alarm.app */,
+				FD1B3B2128F87A6A0039CFBB /* Annoying AlarmTests.xctest */,
+				FD1B3B2B28F87A6A0039CFBB /* Annoying AlarmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD1B3B0D28F87A660039CFBB /* Annoying Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				FD1B3B0E28F87A660039CFBB /* AppDelegate.swift */,
+				FD1B3B1028F87A660039CFBB /* SceneDelegate.swift */,
+				FD1B3B1228F87A660039CFBB /* ViewController.swift */,
+				FD1B3B1428F87A660039CFBB /* Main.storyboard */,
+				FD1B3B1728F87A690039CFBB /* Assets.xcassets */,
+				FD1B3B1928F87A690039CFBB /* LaunchScreen.storyboard */,
+				FD1B3B1C28F87A690039CFBB /* Info.plist */,
+			);
+			path = "Annoying Alarm";
+			sourceTree = "<group>";
+		};
+		FD1B3B2428F87A6A0039CFBB /* Annoying AlarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD1B3B2528F87A6A0039CFBB /* Annoying_AlarmTests.swift */,
+			);
+			path = "Annoying AlarmTests";
+			sourceTree = "<group>";
+		};
+		FD1B3B2E28F87A6A0039CFBB /* Annoying AlarmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD1B3B2F28F87A6A0039CFBB /* Annoying_AlarmUITests.swift */,
+				FD1B3B3128F87A6A0039CFBB /* Annoying_AlarmUITestsLaunchTests.swift */,
+			);
+			path = "Annoying AlarmUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD1B3B0A28F87A660039CFBB /* Annoying Alarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1B3B3528F87A6A0039CFBB /* Build configuration list for PBXNativeTarget "Annoying Alarm" */;
+			buildPhases = (
+				FD1B3B0728F87A660039CFBB /* Sources */,
+				FD1B3B0828F87A660039CFBB /* Frameworks */,
+				FD1B3B0928F87A660039CFBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Annoying Alarm";
+			productName = "Annoying Alarm";
+			productReference = FD1B3B0B28F87A660039CFBB /* Annoying Alarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD1B3B2028F87A6A0039CFBB /* Annoying AlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1B3B3828F87A6A0039CFBB /* Build configuration list for PBXNativeTarget "Annoying AlarmTests" */;
+			buildPhases = (
+				FD1B3B1D28F87A6A0039CFBB /* Sources */,
+				FD1B3B1E28F87A6A0039CFBB /* Frameworks */,
+				FD1B3B1F28F87A6A0039CFBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD1B3B2328F87A6A0039CFBB /* PBXTargetDependency */,
+			);
+			name = "Annoying AlarmTests";
+			productName = "Annoying AlarmTests";
+			productReference = FD1B3B2128F87A6A0039CFBB /* Annoying AlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD1B3B2A28F87A6A0039CFBB /* Annoying AlarmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1B3B3B28F87A6A0039CFBB /* Build configuration list for PBXNativeTarget "Annoying AlarmUITests" */;
+			buildPhases = (
+				FD1B3B2728F87A6A0039CFBB /* Sources */,
+				FD1B3B2828F87A6A0039CFBB /* Frameworks */,
+				FD1B3B2928F87A6A0039CFBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD1B3B2D28F87A6A0039CFBB /* PBXTargetDependency */,
+			);
+			name = "Annoying AlarmUITests";
+			productName = "Annoying AlarmUITests";
+			productReference = FD1B3B2B28F87A6A0039CFBB /* Annoying AlarmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD1B3B0328F87A660039CFBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					FD1B3B0A28F87A660039CFBB = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					FD1B3B2028F87A6A0039CFBB = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = FD1B3B0A28F87A660039CFBB;
+					};
+					FD1B3B2A28F87A6A0039CFBB = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = FD1B3B0A28F87A660039CFBB;
+					};
+				};
+			};
+			buildConfigurationList = FD1B3B0628F87A660039CFBB /* Build configuration list for PBXProject "Annoying Alarm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD1B3B0228F87A660039CFBB;
+			productRefGroup = FD1B3B0C28F87A660039CFBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD1B3B0A28F87A660039CFBB /* Annoying Alarm */,
+				FD1B3B2028F87A6A0039CFBB /* Annoying AlarmTests */,
+				FD1B3B2A28F87A6A0039CFBB /* Annoying AlarmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD1B3B0928F87A660039CFBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1B3B1B28F87A690039CFBB /* LaunchScreen.storyboard in Resources */,
+				FD1B3B1828F87A690039CFBB /* Assets.xcassets in Resources */,
+				FD1B3B1628F87A660039CFBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1B3B1F28F87A6A0039CFBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1B3B2928F87A6A0039CFBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD1B3B0728F87A660039CFBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1B3B1328F87A660039CFBB /* ViewController.swift in Sources */,
+				FD1B3B0F28F87A660039CFBB /* AppDelegate.swift in Sources */,
+				FD1B3B1128F87A660039CFBB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1B3B1D28F87A6A0039CFBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1B3B2628F87A6A0039CFBB /* Annoying_AlarmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1B3B2728F87A6A0039CFBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1B3B3028F87A6A0039CFBB /* Annoying_AlarmUITests.swift in Sources */,
+				FD1B3B3228F87A6A0039CFBB /* Annoying_AlarmUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD1B3B2328F87A6A0039CFBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1B3B0A28F87A660039CFBB /* Annoying Alarm */;
+			targetProxy = FD1B3B2228F87A6A0039CFBB /* PBXContainerItemProxy */;
+		};
+		FD1B3B2D28F87A6A0039CFBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1B3B0A28F87A660039CFBB /* Annoying Alarm */;
+			targetProxy = FD1B3B2C28F87A6A0039CFBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD1B3B1428F87A660039CFBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1B3B1528F87A660039CFBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD1B3B1928F87A690039CFBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1B3B1A28F87A690039CFBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD1B3B3328F87A6A0039CFBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD1B3B3428F87A6A0039CFBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD1B3B3628F87A6A0039CFBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Annoying Alarm/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "StoryBoard.Annoying-Alarm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD1B3B3728F87A6A0039CFBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Annoying Alarm/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "StoryBoard.Annoying-Alarm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD1B3B3928F87A6A0039CFBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "StoryBoard.Annoying-AlarmTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Annoying Alarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Annoying Alarm";
+			};
+			name = Debug;
+		};
+		FD1B3B3A28F87A6A0039CFBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "StoryBoard.Annoying-AlarmTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Annoying Alarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Annoying Alarm";
+			};
+			name = Release;
+		};
+		FD1B3B3C28F87A6A0039CFBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "StoryBoard.Annoying-AlarmUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Annoying Alarm";
+			};
+			name = Debug;
+		};
+		FD1B3B3D28F87A6A0039CFBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "StoryBoard.Annoying-AlarmUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Annoying Alarm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD1B3B0628F87A660039CFBB /* Build configuration list for PBXProject "Annoying Alarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1B3B3328F87A6A0039CFBB /* Debug */,
+				FD1B3B3428F87A6A0039CFBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1B3B3528F87A6A0039CFBB /* Build configuration list for PBXNativeTarget "Annoying Alarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1B3B3628F87A6A0039CFBB /* Debug */,
+				FD1B3B3728F87A6A0039CFBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1B3B3828F87A6A0039CFBB /* Build configuration list for PBXNativeTarget "Annoying AlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1B3B3928F87A6A0039CFBB /* Debug */,
+				FD1B3B3A28F87A6A0039CFBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1B3B3B28F87A6A0039CFBB /* Build configuration list for PBXNativeTarget "Annoying AlarmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1B3B3C28F87A6A0039CFBB /* Debug */,
+				FD1B3B3D28F87A6A0039CFBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD1B3B0328F87A660039CFBB /* Project object */;
+}
