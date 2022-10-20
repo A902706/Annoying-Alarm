@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Annoying Alarm
 //
-//  Created by Jorge Sanchez on 10/13/22.
+//  Created by Andres Sanchez on 10/13/22.
 //
 
 import UIKit
