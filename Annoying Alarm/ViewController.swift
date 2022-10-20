@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         //color of first screen (background)
         view.backgroundColor = .lightGray
         
-        //Button frame,location,text, variable to do if tapped
-        title = "Welcome To Annoying Alarm!"
+        //Button frame,location,text, variable to do if tapped (old button)
+   /*     title = "Welcome To Annoying Alarm!"
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         view.addSubview(button)
         button.center = view.center
@@ -24,8 +24,9 @@ class ViewController: UIViewController {
         button.setTitle("Next Screen", for: .normal)
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         configureItem()
+        
     }
-    //Button stuff
+    //OLD BUTTON JUNK Just in case if decide to go back
     private func  configureItem(){
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .add,
@@ -43,6 +44,7 @@ class ViewController: UIViewController {
         
       //  vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "???", style: .done, target: self, action: nil) //(Possible button for later)
         navigationController?.pushViewController(vc, animated: true)
+    */
     }
 }
  
