@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a7b-E2-ioE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a7b-E2-ioE">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,12 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNd-OD-27i">
-                                <rect key="frame" x="183" y="585" width="191" height="50"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNd-OD-27i">
+                                <rect key="frame" x="210" y="580" width="150" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="RgT-L2-6ax"/>
-                                    <constraint firstAttribute="width" constant="200" id="z2o-5c-0dL"/>
+                                    <constraint firstAttribute="height" constant="50" id="3KX-Z6-4Jc"/>
+                                    <constraint firstAttribute="width" constant="150" id="6Nv-7F-MEX"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="G9N-yN-Mv7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="XSE-ad-QLS"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray">
@@ -38,17 +40,41 @@
                                     <segue destination="97b-vs-wrV" kind="show" id="l9W-gm-9ge"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Copy of QHS Stickers!.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zkK-fM-Mt2">
-                                <rect key="frame" x="73" y="173" width="240" height="241"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKG-SL-qvj">
+                                <rect key="frame" x="41" y="580" width="150" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="FMY-4N-e4R"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="MfG-fm-jQO"/>
+                                    <constraint firstAttribute="height" constant="50" id="gvu-bL-zec"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Set A Time">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="lhc-DX-fnF" kind="show" id="JNf-a0-tWn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" red="0.38133827938829462" green="0.37470237009513047" blue="0.47564673419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Obk-Ev-ptG"/>
-                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k1h-0u-PrQ"/>
+                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="90" id="4Ge-jA-1xi"/>
+                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="AWp-Rh-rJg"/>
+                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="At2-rX-qFN"/>
+                            <constraint firstItem="cKG-SL-qvj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-79" id="GCL-UD-8yv"/>
+                            <constraint firstItem="cKG-SL-qvj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="ZQu-YA-WUa"/>
+                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="90" id="dLA-ZZ-QXC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome!" id="ASo-cx-mYy"/>
@@ -73,6 +99,31 @@
             </objects>
             <point key="canvasLocation" x="1940" y="6"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="28w-yY-Ani">
+            <objects>
+                <viewController id="lhc-DX-fnF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WzX-tH-c0Y">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-1E-ewT">
+                                <rect key="frame" x="18" y="296" width="357" height="35"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="o4d-9e-WmD"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-108.5" id="8tF-cp-lY5"/>
+                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="UMK-h4-EaT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MgI-yP-Dk4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xVU-U8-eVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2787.6923076923076" y="14.928909952606634"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bAK-dW-Oid">
             <objects>
@@ -94,12 +145,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Copy of QHS Stickers!.jpg" width="283.51998901367188" height="283.51998901367188"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
