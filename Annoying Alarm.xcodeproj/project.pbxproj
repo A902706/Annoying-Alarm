@@ -17,8 +17,6 @@
 		FD1B3B2628F87A6A0039CFBB /* Annoying_AlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B2528F87A6A0039CFBB /* Annoying_AlarmTests.swift */; };
 		FD1B3B3028F87A6A0039CFBB /* Annoying_AlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B2F28F87A6A0039CFBB /* Annoying_AlarmUITests.swift */; };
 		FD1B3B3228F87A6A0039CFBB /* Annoying_AlarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B3128F87A6A0039CFBB /* Annoying_AlarmUITestsLaunchTests.swift */; };
-		FDF25C3D2902170700312F0B /* AlarmViewConrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF25C3C2902170700312F0B /* AlarmViewConrollerViewController.swift */; };
-		FDF25C3F2902174000312F0B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF25C3E2902174000312F0B /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +51,6 @@
 		FD1B3B2B28F87A6A0039CFBB /* Annoying AlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Annoying AlarmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1B3B2F28F87A6A0039CFBB /* Annoying_AlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annoying_AlarmUITests.swift; sourceTree = "<group>"; };
 		FD1B3B3128F87A6A0039CFBB /* Annoying_AlarmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annoying_AlarmUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FDF25C3C2902170700312F0B /* AlarmViewConrollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewConrollerViewController.swift; sourceTree = "<group>"; };
-		FDF25C3E2902174000312F0B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +101,6 @@
 		FD1B3B0D28F87A660039CFBB /* Annoying Alarm */ = {
 			isa = PBXGroup;
 			children = (
-				FDF25C3C2902170700312F0B /* AlarmViewConrollerViewController.swift */,
-				FDF25C3E2902174000312F0B /* ThirdViewController.swift */,
 				FD1B3B0E28F87A660039CFBB /* AppDelegate.swift */,
 				FD1B3B1028F87A660039CFBB /* SceneDelegate.swift */,
 				FD1B3B1228F87A660039CFBB /* ViewController.swift */,
@@ -268,9 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDF25C3D2902170700312F0B /* AlarmViewConrollerViewController.swift in Sources */,
 				FD1B3B1328F87A660039CFBB /* ViewController.swift in Sources */,
-				FDF25C3F2902174000312F0B /* ThirdViewController.swift in Sources */,
 				FD1B3B0F28F87A660039CFBB /* AppDelegate.swift in Sources */,
 				FD1B3B1128F87A660039CFBB /* SceneDelegate.swift in Sources */,
 			);

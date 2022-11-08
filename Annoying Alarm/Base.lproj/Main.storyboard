@@ -83,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="986.15384615384608" y="-2.1327014218009479"/>
         </scene>
-        <!--    -->
+        <!--  About?  -->
         <scene sceneID="f6U-Hq-f5O">
             <objects>
                 <viewController id="97b-vs-wrV" sceneMemberID="viewController">
@@ -93,16 +93,16 @@
                         <viewLayoutGuide key="safeArea" id="fHA-mP-Kzi"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="    " id="tl9-CP-1gj"/>
+                    <navigationItem key="navigationItem" title="  About?  " id="tl9-CP-1gj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhs-P9-y8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1940" y="6"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Alarm-->
         <scene sceneID="28w-yY-Ani">
             <objects>
-                <viewController id="lhc-DX-fnF" sceneMemberID="viewController">
+                <viewController id="lhc-DX-fnF" customClass="AlarmCode" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WzX-tH-c0Y">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +118,7 @@
                             <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="UMK-h4-EaT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MgI-yP-Dk4"/>
+                    <navigationItem key="navigationItem" title="Edit Alarm" id="MgI-yP-Dk4" customClass="AlarmCode"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xVU-U8-eVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
