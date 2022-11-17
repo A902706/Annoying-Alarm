@@ -8,13 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-//THis stuff loads onto the screen
+    
+
+    //THis stuff loads onto the screen
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //color of first screen (background)
-        view.backgroundColor = .lightGray
-        
+     
         //Button frame,location,text, variable to do if tapped (old button)
    /*     title = "Welcome To Annoying Alarm!"
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))

@@ -18,7 +18,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNd-OD-27i">
                                 <rect key="frame" x="210" y="580" width="150" height="50"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3KX-Z6-4Jc"/>
                                     <constraint firstAttribute="width" constant="150" id="6Nv-7F-MEX"/>
@@ -42,7 +42,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKG-SL-qvj">
                                 <rect key="frame" x="41" y="580" width="150" height="50"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="FMY-4N-e4R"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="MfG-fm-jQO"/>
@@ -51,7 +51,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Set A Time">
+                                        <fragment content="Time/Date">
                                             <attributes>
                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -67,7 +67,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.38133827938829462" green="0.37470237009513047" blue="0.47564673419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aNd-OD-27i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="90" id="4Ge-jA-1xi"/>
                             <constraint firstItem="aNd-OD-27i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="AWp-Rh-rJg"/>
@@ -83,23 +83,41 @@
             </objects>
             <point key="canvasLocation" x="986.15384615384608" y="-2.1327014218009479"/>
         </scene>
-        <!--  About?  -->
+        <!--About?-->
         <scene sceneID="f6U-Hq-f5O">
             <objects>
                 <viewController id="97b-vs-wrV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VXH-dd-qZW" customClass="ThirdViewContoller" customModule="Annoying_Alarm" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csz-Sm-eWs">
+                                <rect key="frame" x="105" y="219" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4y-Zn-0YK">
+                                <rect key="frame" x="38" y="174" width="314" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <string key="text">As a teenager I struggle to wake up in the morning.                                                                     In order to combat this I decided to attempt to make a app which a condition must be solved in order to shut the alarm off.                                       I </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fHA-mP-Kzi"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="  About?  " id="tl9-CP-1gj"/>
+                    <navigationItem key="navigationItem" title="About?" id="tl9-CP-1gj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhs-P9-y8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="6"/>
+            <point key="canvasLocation" x="1940" y="5.6872037914691944"/>
         </scene>
-        <!--Edit Alarm-->
+        <!--Time/Date-->
         <scene sceneID="28w-yY-Ani">
             <objects>
                 <viewController id="lhc-DX-fnF" customClass="AlarmCode" sceneMemberID="viewController">
@@ -107,18 +125,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-1E-ewT">
-                                <rect key="frame" x="18" y="296" width="357" height="35"/>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-1E-ewT">
+                                <rect key="frame" x="0.0" y="335.33333333333331" width="390" height="34.333333333333314"/>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLy-VA-TWV">
+                                <rect key="frame" x="150" y="524" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o4d-9e-WmD"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
-                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-108.5" id="8tF-cp-lY5"/>
-                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="UMK-h4-EaT"/>
+                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-69.5" id="SWM-Vi-I7a"/>
+                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="y1h-Td-hp2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit Alarm" id="MgI-yP-Dk4" customClass="AlarmCode"/>
+                    <navigationItem key="navigationItem" title="Time/Date" id="MgI-yP-Dk4" customClass="AlarmCode"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xVU-U8-eVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,18 +168,16 @@
             <point key="canvasLocation" x="56.92307692307692" y="-2.1327014218009479"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="linkColor"/>
     <resources>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
