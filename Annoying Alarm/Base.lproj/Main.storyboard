@@ -102,7 +102,7 @@
                                 <rect key="frame" x="38" y="174" width="314" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <string key="text">As a teenager I struggle to wake up in the morning.                                                                     In order to combat this I decided to attempt to make a app which a condition must be solved in order to shut the alarm off.                                       I </string>
+                                <string key="text">As a teenager I struggle to wake up in the morning.                                                                     In order to combat this I decided to attempt to make an alarm app. which a condition must be solved in order to shut the alarm off.                                       </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -125,19 +125,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-1E-ewT">
-                                <rect key="frame" x="0.0" y="335.33333333333331" width="390" height="34.333333333333314"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-1E-ewT">
+                                <rect key="frame" x="35" y="244.66666666666663" width="320" height="216"/>
+                                <connections>
+                                    <action selector="timeSet:forEvent:" destination="lhc-DX-fnF" eventType="valueChanged" id="PhP-u9-MLE"/>
+                                </connections>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLy-VA-TWV">
-                                <rect key="frame" x="150" y="524" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o4d-9e-WmD"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
+                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-69.329999999999998" id="3WF-3B-TXh"/>
+                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="9xg-Fx-RHT"/>
                             <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-69.5" id="SWM-Vi-I7a"/>
                             <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="y1h-Td-hp2"/>
                         </constraints>
