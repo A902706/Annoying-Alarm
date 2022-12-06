@@ -12,19 +12,13 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Annoying_Alarm" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="AlarmViewController" customModule="Annoying_Alarm" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNd-OD-27i">
-                                <rect key="frame" x="210" y="580" width="150" height="50"/>
+                                <rect key="frame" x="252" y="591" width="66" height="28"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="3KX-Z6-4Jc"/>
-                                    <constraint firstAttribute="width" constant="150" id="6Nv-7F-MEX"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="G9N-yN-Mv7"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="XSE-ad-QLS"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray">
                                     <attributedString key="attributedTitle">
@@ -37,17 +31,12 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="97b-vs-wrV" kind="show" id="l9W-gm-9ge"/>
+                                    <segue destination="97b-vs-wrV" kind="show" id="u34-ge-l8p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKG-SL-qvj">
-                                <rect key="frame" x="41" y="580" width="150" height="50"/>
+                                <rect key="frame" x="75.333333333333343" y="591" width="81.333333333333343" height="28"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="FMY-4N-e4R"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="MfG-fm-jQO"/>
-                                    <constraint firstAttribute="height" constant="50" id="gvu-bL-zec"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray">
                                     <attributedString key="attributedTitle">
@@ -62,19 +51,17 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="lhc-DX-fnF" kind="show" id="JNf-a0-tWn"/>
+                                    <segue destination="lhc-DX-fnF" kind="show" id="TgY-QQ-yBv"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="90" id="4Ge-jA-1xi"/>
-                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="AWp-Rh-rJg"/>
-                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="At2-rX-qFN"/>
-                            <constraint firstItem="cKG-SL-qvj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-79" id="GCL-UD-8yv"/>
-                            <constraint firstItem="cKG-SL-qvj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="ZQu-YA-WUa"/>
-                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="90" id="dLA-ZZ-QXC"/>
+                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="102-dc-saE"/>
+                            <constraint firstItem="cKG-SL-qvj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="Cyl-UI-dvA"/>
+                            <constraint firstItem="cKG-SL-qvj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-79" id="Lxg-sX-NHF"/>
+                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="90" id="x83-Tg-D2H"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome!" id="ASo-cx-mYy"/>
@@ -87,21 +74,19 @@
         <scene sceneID="f6U-Hq-f5O">
             <objects>
                 <viewController id="97b-vs-wrV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VXH-dd-qZW" customClass="ThirdViewContoller" customModule="Annoying_Alarm" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="VXH-dd-qZW">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csz-Sm-eWs">
-                                <rect key="frame" x="105" y="219" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4y-Zn-0YK">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4y-Zn-0YK">
                                 <rect key="frame" x="38" y="174" width="314" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="85S-Gp-GNh"/>
+                                    <constraint firstAttribute="width" constant="314" id="RQS-XB-BiL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="172" id="mxE-DW-vDb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="314" id="tyc-7R-Gkx"/>
+                                </constraints>
                                 <string key="text">As a teenager I struggle to wake up in the morning.                                                                     In order to combat this I decided to attempt to make an alarm app. which a condition must be solved in order to shut the alarm off.                                       </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -110,6 +95,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fHA-mP-Kzi"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="t4y-Zn-0YK" firstAttribute="centerY" secondItem="VXH-dd-qZW" secondAttribute="centerY" constant="-162" id="ACh-hL-G8o"/>
+                            <constraint firstItem="t4y-Zn-0YK" firstAttribute="centerX" secondItem="VXH-dd-qZW" secondAttribute="centerX" id="Bsg-LX-hzd"/>
+                            <constraint firstItem="t4y-Zn-0YK" firstAttribute="centerX" secondItem="VXH-dd-qZW" secondAttribute="centerX" id="Yph-V5-Aua"/>
+                            <constraint firstItem="t4y-Zn-0YK" firstAttribute="centerY" secondItem="VXH-dd-qZW" secondAttribute="centerY" constant="-162" id="kqs-7t-ZSU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About?" id="tl9-CP-1gj"/>
                 </viewController>
@@ -120,28 +111,30 @@
         <!--Time/Date-->
         <scene sceneID="28w-yY-Ani">
             <objects>
-                <viewController id="lhc-DX-fnF" customClass="AlarmCode" sceneMemberID="viewController">
+                <viewController id="lhc-DX-fnF" customClass="ViewController" customModule="Annoying_Alarm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WzX-tH-c0Y">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-1E-ewT">
-                                <rect key="frame" x="35" y="244.66666666666663" width="320" height="216"/>
-                                <connections>
-                                    <action selector="timeSet:forEvent:" destination="lhc-DX-fnF" eventType="valueChanged" id="PhP-u9-MLE"/>
-                                </connections>
-                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yru-R7-9oc">
+                                <rect key="frame" x="40" y="230" width="310" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Zo7-IR-dvB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o4d-9e-WmD"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
-                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-69.329999999999998" id="3WF-3B-TXh"/>
-                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="9xg-Fx-RHT"/>
-                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-69.5" id="SWM-Vi-I7a"/>
-                            <constraint firstItem="YVJ-1E-ewT" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="y1h-Td-hp2"/>
+                            <constraint firstItem="o4d-9e-WmD" firstAttribute="trailing" secondItem="yru-R7-9oc" secondAttribute="trailing" constant="40" id="2i3-te-Pui"/>
+                            <constraint firstItem="yru-R7-9oc" firstAttribute="leading" secondItem="o4d-9e-WmD" secondAttribute="leading" constant="40" id="U3a-Wk-nqT"/>
+                            <constraint firstItem="yru-R7-9oc" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="af2-Ry-7wG"/>
+                            <constraint firstItem="yru-R7-9oc" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-162" id="o8O-65-bsz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Time/Date" id="MgI-yP-Dk4" customClass="AlarmCode"/>
+                    <navigationItem key="navigationItem" title="Time/Date" id="MgI-yP-Dk4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xVU-U8-eVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

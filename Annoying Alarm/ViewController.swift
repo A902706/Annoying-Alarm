@@ -15,9 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    @IBAction func timeSet(_ sender: Any, forEvent event: UIEvent) {
-        
-    }
+
     
 }
  
