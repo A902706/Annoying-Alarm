@@ -50,9 +50,6 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="lhc-DX-fnF" kind="show" id="Ge5-9a-DPQ"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

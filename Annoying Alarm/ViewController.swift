@@ -14,10 +14,10 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     dateTextField.delegate = self
+      
   }
-
-
 }
+
 extension ViewController: UITextFieldDelegate {
   func textFieldDidBeginEditing(_ textField: UITextField) {
     self.openDatePicker()
@@ -27,19 +27,20 @@ extension ViewController: UITextFieldDelegate {
 
 
   //If dateTextField is tapped/clicked it will run the rest of this code
-
+  //Code Below makes the date picker apear
 extension ViewController {
   func openDatePicker() {
-    let datePicker = UIDatePicker()
+      let datePicker = UIDatePicker()
+    datePicker.preferredDatePickerStyle = .wheels
     datePicker.datePickerMode = .dateAndTime
     datePicker.addTarget(self, action: #selector(self.datePickerHandler(datePicker:)), for: .valueChanged)
     dateTextField.inputView = datePicker
     
   // Creates Tool Bar, Cancel Button, AND Done Button
-    let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44))
-    let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(self.cancelButtonClick))
+    let toolbar = UIToolbar(frame: CGRect(x: 0, y: 20, width: self.view.frame.width, height: 44))
+      let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(self.cancelButtonClick))
     let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonClick))
-  //Buttons will be spaced evenly from one side to another using fexible attribute
+  //Buttons Done & Cancel will be spaced evenly from one side to another using fexible attribute
     let SpaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
     
     toolbar.setItems([cancelButton, SpaceButton, doneButton], animated: false)
@@ -54,7 +55,7 @@ extension ViewController {
   @objc func doneButtonClick() {
     if let datePicker = dateTextField.inputView as? UIDatePicker {
       let dateFormatter = DateFormatter()
-      dateFormatter.dateFormat = "MM-dd hh:mm:ss"
+      dateFormatter.dateFormat = "MM-dd-yyyy, hh:mm"
       dateTextField.text = dateFormatter.string(from: datePicker.date)
       print(datePicker.date)
     }
