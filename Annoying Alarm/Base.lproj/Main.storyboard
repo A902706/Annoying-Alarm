@@ -8,103 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Welcome!-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Annoying_Alarm" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNd-OD-27i">
-                                <rect key="frame" x="252" y="591" width="66" height="28"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="About?">
-                                            <attributes>
-                                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="97b-vs-wrV" kind="show" id="olx-zx-Zao"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKG-SL-qvj">
-                                <rect key="frame" x="75.333333333333343" y="591" width="81.333333333333343" height="28"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Time/Date">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                </buttonConfiguration>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGrayColor"/>
-                        <constraints>
-                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="102-dc-saE"/>
-                            <constraint firstItem="cKG-SL-qvj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="Cyl-UI-dvA"/>
-                            <constraint firstItem="cKG-SL-qvj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-79" id="Lxg-sX-NHF"/>
-                            <constraint firstItem="aNd-OD-27i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="90" id="x83-Tg-D2H"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Welcome!" id="ASo-cx-mYy"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="986.15384615384608" y="-2.1327014218009479"/>
-        </scene>
-        <!--About?-->
-        <scene sceneID="f6U-Hq-f5O">
-            <objects>
-                <viewController id="97b-vs-wrV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VXH-dd-qZW">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4y-Zn-0YK">
-                                <rect key="frame" x="38" y="174" width="314" height="172"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="172" id="85S-Gp-GNh"/>
-                                    <constraint firstAttribute="width" constant="314" id="RQS-XB-BiL"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="172" id="mxE-DW-vDb"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="314" id="tyc-7R-Gkx"/>
-                                </constraints>
-                                <string key="text">As a teenager I struggle to wake up in the morning.                                                                     In order to combat this I decided to attempt to make an alarm app. which a condition must be solved in order to shut the alarm off.                                       </string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="fHA-mP-Kzi"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
-                        <constraints>
-                            <constraint firstItem="t4y-Zn-0YK" firstAttribute="centerY" secondItem="VXH-dd-qZW" secondAttribute="centerY" constant="-162" id="ACh-hL-G8o"/>
-                            <constraint firstItem="t4y-Zn-0YK" firstAttribute="centerX" secondItem="VXH-dd-qZW" secondAttribute="centerX" id="Bsg-LX-hzd"/>
-                            <constraint firstItem="t4y-Zn-0YK" firstAttribute="centerX" secondItem="VXH-dd-qZW" secondAttribute="centerX" id="Yph-V5-Aua"/>
-                            <constraint firstItem="t4y-Zn-0YK" firstAttribute="centerY" secondItem="VXH-dd-qZW" secondAttribute="centerY" constant="-162" id="kqs-7t-ZSU"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="About?" id="tl9-CP-1gj"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qhs-P9-y8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1940" y="5.6872037914691944"/>
-        </scene>
         <!--Time/Date-->
         <scene sceneID="28w-yY-Ani">
             <objects>
@@ -140,39 +43,14 @@
             </objects>
             <point key="canvasLocation" x="2787.6923076923076" y="14.928909952606634"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="bAK-dW-Oid">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a7b-E2-ioE" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="lqJ-GE-qSM">
-                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GRn-f9-RdT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ITr-xo-EnR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="56.92307692307692" y="-2.1327014218009479"/>
-        </scene>
     </scenes>
     <color key="tintColor" systemColor="linkColor"/>
     <resources>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
