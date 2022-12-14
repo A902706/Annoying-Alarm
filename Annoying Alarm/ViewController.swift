@@ -25,24 +25,17 @@ class ViewController: UIViewController {
         timer?.invalidate()
     }
     @objc func actionCode() {
-
         // get the current date and time
         let currentDateTime = Date()
-
         // get the user's calendar
         let userCalendar = Calendar.current
-      
-
         //date component
         let requestedComponents: Set<Calendar.Component> = [.year,.month,.day,.hour,.minute,.second]
-   
-
         // callss the components
         let dateTimeComponents = userCalendar.dateComponents(requestedComponents, from: currentDateTime)
 
-        print(userCalendar)
+        
         print(dateTimeComponents)
-
     }
 }
 
@@ -82,11 +75,14 @@ extension ViewController {
     @objc func doneButtonClick() {
         if let datePicker = dateTextField.inputView as? UIDatePicker {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "MM-dd-yyyy, hh:mm"
+            dateFormatter.dateFormat =  "MM-dd-yyyy, hh:mm"
+            
             dateTextField.text = dateFormatter.string(from: datePicker.date)
             print(datePicker.date)
+            print(dateFormatter)
         }
         dateTextField.resignFirstResponder()
+        
     }
     
     @objc func datePickerHandler(datePicker: UIDatePicker) {
