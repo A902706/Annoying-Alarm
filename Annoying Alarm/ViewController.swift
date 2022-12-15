@@ -4,89 +4,115 @@
 //
 //  Created by Andres Sanchez on 10/13/22.
 //
-
 import UIKit
 
 class ViewController: UIViewController {
     
-    var timer: Timer?
-
-  @IBOutlet weak var dateTextField: UITextField!
-  override func viewDidLoad() {
-    super.viewDidLoad()
-      //UIDatePicker
-    dateTextField.delegate = self
-      //timer
-      timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(actionCode), userInfo: nil, repeats: true)
-  }
+    //Counter counter name input textfield
+    @IBOutlet weak var eventNameTextField: UITextField!
+    //DatePicker select
+    @IBOutlet weak var eventDateSelectDatePicker: UIDatePicker!
+    //displays the label of textField
+    @IBOutlet weak var eventNameLabel: UILabel!
+    //displays the label of the datePikcker
+    @IBOutlet weak var eventDateLabel: UILabel!
+    //The number of days displayed by the countdown counter
+    @IBOutlet weak var dayOfEventCountLabel: UILabel!
+    //The hour displayed by the countdown
+    @IBOutlet weak var hoursOfEventCountLabel: UILabel!
+    //The minutes displayed by the countdown
+    @IBOutlet weak var minutesOfEventCountLabel: UILabel!
+    //The seconds displayed by the countdown
+    @IBOutlet weak var secondsOfEventCountLabel: UILabel!
+    //Define timer for countdown time
+    var timer : Timer?
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        timer?.invalidate()
+    
+    
+    //Hides keybord stuff
+    func hideKeyboardWhenTappedAround() {
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+    view.addGestureRecognizer(tap)
     }
-    @objc func actionCode() {
-        // get the current date and time
-        let currentDateTime = Date()
-        // get the user's calendar
-        let userCalendar = Calendar.current
-        //date component
-        let requestedComponents: Set<Calendar.Component> = [.year,.month,.day,.hour,.minute,.second]
-        // callss the components
-        let dateTimeComponents = userCalendar.dateComponents(requestedComponents, from: currentDateTime)
-
-        
-        print(dateTimeComponents)
+    @objc func dismissKeyboard() {
+    view.endEditing(true)
     }
-}
-
-
-extension ViewController: UITextFieldDelegate {
-  func textFieldDidBeginEditing(_ textField: UITextField) {
-    self.openDatePicker()
-  }
-}
-
-  //If dateTextField is tapped/clicked it will run the rest of this code
-  //Code Below makes the date picker apear
-extension ViewController {
-    func openDatePicker() {
-        let datePicker = UIDatePicker()
-        datePicker.preferredDatePickerStyle = .wheels
-        datePicker.datePickerMode = .dateAndTime
-        datePicker.addTarget(self, action: #selector(self.datePickerHandler(datePicker:)), for: .valueChanged)
-        dateTextField.inputView = datePicker
-        
-        // Creates Tool Bar, Cancel Button, AND Done Button
-        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 20, width: self.view.frame.width, height: 44))
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(self.cancelButtonClick))
-        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonClick))
-        //Buttons Done & Cancel will be spaced evenly from one side to another using fexible attribute
-        let SpaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        
-        toolbar.setItems([cancelButton, SpaceButton, doneButton], animated: false)
-        
-        dateTextField.inputAccessoryView = toolbar
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        //Click anywhere to close the keyboard
+        self.hideKeyboardWhenTappedAround()
     }
-    //This says IF the cancel button is clicked/tapped close the datpicker
-    @objc func cancelButtonClick() {
-        dateTextField.resignFirstResponder()
-    }
-    //This tells IF "Done" button is clicked/tapped display the Date/time chosen
-    @objc func doneButtonClick() {
-        if let datePicker = dateTextField.inputView as? UIDatePicker {
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat =  "MM-dd-yyyy, hh:mm"
-            
-            dateTextField.text = dateFormatter.string(from: datePicker.date)
-            print(datePicker.date)
-            print(dateFormatter)
+
+    func dateCountStart() {
+        
+        //Assign the "date" selected by datepicker to eventDate
+        let eventDate = eventDateSelectDatePicker.date
+        
+        
+        
+        //Let eventDateLabel display the time selected by datepicker
+        
+        //Defineing the formatter
+        let formatter = DateFormatter()
+        //THis displays date formatt yyyy/mm/dd
+        formatter.dateFormat = "yyyy/MM/dd"
+        //THis displays content of .dateFormat to showTOLabelDate "label"
+        //The time obtained by showTOLabelDate is based on the date picker assigned to eventDate
+        let showTOLabelDate = formatter.string(from: eventDate)
+        //Display the format of the processed time into a string on eventDateLabel (display the label of the selected time)
+        eventDateLabel.text = showTOLabelDate
+        
+        
+        
+        //calculates & starts countdown
+        //then cancel the original timer
+        if let timer = timer {
+            timer.invalidate()
         }
-        dateTextField.resignFirstResponder()
         
+        //Enable the timer trigger event it checks the interval is every second
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
+           
+            // use the time difference between current datepicker and datepicker through .timeIntervalSinceNow
+            //Assign to interval
+            let interval = Int(eventDate.timeIntervalSinceNow)
+   
+            // Get the remainder of the time difference in seconds
+            let eventSconds = interval % 60
+            //Get the remainder of the minutes of the time difference
+            let eventMinutes = interval / 60 % 60
+   
+            // Get the remainder of the hour of the time difference
+            let eventHours = interval / 60 / 60 % 24
+          
+            // Get the number of days of time difference
+            let eventDay = interval / 60 / 60 / 24
+            
+            //Assign the remaining "days", "hours", "minutes" and "seconds" to the prepared Labeltion
+            self.secondsOfEventCountLabel.text = "\(eventSconds) Sec"
+            self.minutesOfEventCountLabel.text = "\(eventMinutes) Min"
+            self.hoursOfEventCountLabel.text = "\(eventHours) Hour"
+            self.dayOfEventCountLabel.text = "\(eventDay) Day"
+        }
+
+    }
+    //custom dateCountStart
+    @IBAction func dateSelect(_ sender: Any) {
+        //excutes when writtendateCountStart()function
+        dateCountStart()
     }
     
-    @objc func datePickerHandler(datePicker: UIDatePicker) {
-        print(datePicker.date)
+    // UITextField action
+    @IBAction func eventNameWrite(_ sender: Any) {
+        //Press return to close the keyboard
+        view.endEditing(true)
+        //Assign the content of textfield to ventNameTextField
+        eventNameLabel.text = eventNameTextField.text
     }
+    
+    
 }
 
