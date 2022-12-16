@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     
     
-    //Hides keybord stuff
+    //Hides keybord stuff if something is tapped around
     func hideKeyboardWhenTappedAround() {
     let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
     view.addGestureRecognizer(tap)
@@ -96,8 +96,11 @@ class ViewController: UIViewController {
             self.minutesOfEventCountLabel.text = "\(eventMinutes) Min"
             self.hoursOfEventCountLabel.text = "\(eventHours) Hour"
             self.dayOfEventCountLabel.text = "\(eventDay) Day"
+            if  eventSconds == 0  {
+                print("OMG WWAKE UP")
+            }
         }
-
+        
     }
     //custom dateCountStart
     @IBAction func dateSelect(_ sender: Any) {
