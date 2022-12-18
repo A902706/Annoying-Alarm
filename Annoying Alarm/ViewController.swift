@@ -5,6 +5,7 @@
 //  Created by Andres Sanchez on 10/13/22.
 //
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -27,7 +28,24 @@ class ViewController: UIViewController {
     //Define timer for countdown time
     var timer : Timer?
     
-    
+    var player: AVAudioPlayer?
+
+    func playSound() {
+        let url = Bundle.main.url(forResource: "alarmclock", withExtension: "mp3")!
+
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+
+            player.prepareToPlay()
+            player.play()
+
+        } catch let error as NSError {
+            print(error.description)
+        }
+    }
+
+
     
     //Hides keybord stuff if something is tapped around
     func hideKeyboardWhenTappedAround() {
@@ -58,7 +76,7 @@ class ViewController: UIViewController {
         //Defineing the formatter
         let formatter = DateFormatter()
         //THis displays date formatt yyyy/mm/dd
-        formatter.dateFormat = "yyyy/MM/dd"
+        formatter.dateFormat = "mm/dd/yy"
         //THis displays content of .dateFormat to showTOLabelDate "label"
         //The time obtained by showTOLabelDate is based on the date picker assigned to eventDate
         let showTOLabelDate = formatter.string(from: eventDate)
@@ -75,19 +93,19 @@ class ViewController: UIViewController {
         
         //Enable the timer trigger event it checks the interval is every second
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
-           
+            
             // use the time difference between current datepicker and datepicker through .timeIntervalSinceNow
             //Assign to interval
             let interval = Int(eventDate.timeIntervalSinceNow)
-   
+            
             // Get the remainder of the time difference in seconds
             let eventSconds = interval % 60
             //Get the remainder of the minutes of the time difference
             let eventMinutes = interval / 60 % 60
-   
+            
             // Get the remainder of the hour of the time difference
             let eventHours = interval / 60 / 60 % 24
-          
+            
             // Get the number of days of time difference
             let eventDay = interval / 60 / 60 / 24
             
@@ -96,12 +114,18 @@ class ViewController: UIViewController {
             self.minutesOfEventCountLabel.text = "\(eventMinutes) Min"
             self.hoursOfEventCountLabel.text = "\(eventHours) Hour"
             self.dayOfEventCountLabel.text = "\(eventDay) Day"
-            if  eventSconds == 0  {
-                print("OMG WWAKE UP")
+         //this is a parameter which is kinda a "trigger"
+         //This also stops timmer and plays sound
+            if  (eventSconds, eventMinutes, eventHours, eventDay) == (0,0,0,0){
+                self.timer?.invalidate()
+                self.playSound()
             }
         }
         
     }
+    
+    
+    
     //custom dateCountStart
     @IBAction func dateSelect(_ sender: Any) {
         //excutes when writtendateCountStart()function

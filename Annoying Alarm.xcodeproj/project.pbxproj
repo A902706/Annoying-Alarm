@@ -17,6 +17,7 @@
 		FD1B3B2628F87A6A0039CFBB /* Annoying_AlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B2528F87A6A0039CFBB /* Annoying_AlarmTests.swift */; };
 		FD1B3B3028F87A6A0039CFBB /* Annoying_AlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B2F28F87A6A0039CFBB /* Annoying_AlarmUITests.swift */; };
 		FD1B3B3228F87A6A0039CFBB /* Annoying_AlarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B3128F87A6A0039CFBB /* Annoying_AlarmUITestsLaunchTests.swift */; };
+		FD3D7838294F9E8A00E86C12 /* alarmclock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD3D7837294F9E8A00E86C12 /* alarmclock.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FD1B3B2B28F87A6A0039CFBB /* Annoying AlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Annoying AlarmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1B3B2F28F87A6A0039CFBB /* Annoying_AlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annoying_AlarmUITests.swift; sourceTree = "<group>"; };
 		FD1B3B3128F87A6A0039CFBB /* Annoying_AlarmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annoying_AlarmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD3D7837294F9E8A00E86C12 /* alarmclock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarmclock.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				FD1B3B1728F87A690039CFBB /* Assets.xcassets */,
 				FD1B3B1928F87A690039CFBB /* LaunchScreen.storyboard */,
 				FD1B3B1C28F87A690039CFBB /* Info.plist */,
+				FD3D7837294F9E8A00E86C12 /* alarmclock.mp3 */,
 			);
 			path = "Annoying Alarm";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD07C0EA2912083600A018C4 /* Anoying Alarm Logo.jpg in Resources */,
+				FD3D7838294F9E8A00E86C12 /* alarmclock.mp3 in Resources */,
 				FD1B3B1B28F87A690039CFBB /* LaunchScreen.storyboard in Resources */,
 				FD1B3B1828F87A690039CFBB /* Assets.xcassets in Resources */,
 				FD1B3B1628F87A660039CFBB /* Main.storyboard in Resources */,
