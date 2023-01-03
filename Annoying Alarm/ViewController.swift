@@ -8,7 +8,7 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-    
+    // ALL OUTLETS the go to a button
     //Counter counter name input textfield
     @IBOutlet weak var eventNameTextField: UITextField!
     //DatePicker select
