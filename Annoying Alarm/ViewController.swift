@@ -109,16 +109,20 @@ class ViewController: UIViewController {
             // Get the number of days of time difference
             let eventDay = interval / 60 / 60 / 24
             
-            //Assign the remaining "days", "hours", "minutes" and "seconds" to the prepared Labeltion
+            //Assign the remaining "days", "hours", "minutes" and "seconds"
             self.secondsOfEventCountLabel.text = "\(eventSconds) Sec"
             self.minutesOfEventCountLabel.text = "\(eventMinutes) Min"
             self.hoursOfEventCountLabel.text = "\(eventHours) Hour"
             self.dayOfEventCountLabel.text = "\(eventDay) Day"
+    
          //this is a parameter which is kinda a "trigger"
          //This also stops timmer and plays sound
             if  (eventSconds, eventMinutes, eventHours, eventDay) == (0,0,0,0){
                 self.timer?.invalidate()
-                self.playSound()
+                self.timer = Timer.scheduledTimer(withTimeInterval: 16, repeats: true) {_ in
+                    print("pro");
+                    self.playSound()
+                }
             }
         }
         
