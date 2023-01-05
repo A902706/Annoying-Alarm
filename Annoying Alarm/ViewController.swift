@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     var timer : Timer?
     
     var player: AVAudioPlayer?
-
+    //this func calls sound (prop should use this as my main code will do later)
     func playSound() {
         let url = Bundle.main.url(forResource: "alarmclock", withExtension: "mp3")!
 
@@ -117,12 +117,19 @@ class ViewController: UIViewController {
     
          //this is a parameter which is kinda a "trigger"
          //This also stops timmer and plays sound
+         //Plan to add a popup
             if  (eventSconds, eventMinutes, eventHours, eventDay) == (0,0,0,0){
                 self.timer?.invalidate()
-                self.timer = Timer.scheduledTimer(withTimeInterval: 16, repeats: true) {_ in
+
                     print("pro");
-                    self.playSound()
-                }
+               // self.player?.volume = 100
+                self.player?.play()
+                self.player?.numberOfLoops = -1
+       
+                
+                //FOR Future use once I get the solution stuff going self.player?.stop()
+                
+                
             }
         }
         
