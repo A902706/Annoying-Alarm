@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     var timer : Timer?
     
     var player: AVAudioPlayer?
-    //this func calls sound (prop should use this as my main code will do later)
+    //this func calls sound
     func playSound() {
         let url = Bundle.main.url(forResource: "alarmclock", withExtension: "mp3")!
 
@@ -38,14 +38,22 @@ class ViewController: UIViewController {
             guard let player = player else { return }
 
             player.prepareToPlay()
+            player.numberOfLoops = -1
+            print("omg")
             player.play()
-
+            
         } catch let error as NSError {
             print(error.description)
         }
     }
-
-
+    //Asks question 1+1? all raandom though
+    func question() {
+        let numberOne = Int.random(in: 1..<100)
+        let numberTwo = Int.random(in: 1..<100)
+        print("what is ", numberOne, "(Future opperator)", numberTwo)
+    }
+    
+    
     
     //Hides keybord stuff if something is tapped around
     func hideKeyboardWhenTappedAround() {
@@ -120,16 +128,13 @@ class ViewController: UIViewController {
          //Plan to add a popup
             if  (eventSconds, eventMinutes, eventHours, eventDay) == (0,0,0,0){
                 self.timer?.invalidate()
-
+                // test to see if works
                     print("pro");
                // self.player?.volume = 100
-                self.player?.play()
-                self.player?.numberOfLoops = -1
-       
-                
-                //FOR Future use once I get the solution stuff going self.player?.stop()
-                
-                
+                self.playSound()
+                self.question()
+              
+                //FOR Future use once I get the solution stuff going player.stop()
             }
         }
         

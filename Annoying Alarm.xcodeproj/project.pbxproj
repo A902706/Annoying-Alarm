@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FD078C05293F13C5007943AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD078C04293F13C5007943AC /* ViewController.swift */; };
-		FD07C0EA2912083600A018C4 /* Anoying Alarm Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD07C0E92912083600A018C4 /* Anoying Alarm Logo.jpg */; };
 		FD1B3B0F28F87A660039CFBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B0E28F87A660039CFBB /* AppDelegate.swift */; };
 		FD1B3B1128F87A660039CFBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B3B1028F87A660039CFBB /* SceneDelegate.swift */; };
 		FD1B3B1628F87A660039CFBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1B3B1428F87A660039CFBB /* Main.storyboard */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		FD078C04293F13C5007943AC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FD07C0E92912083600A018C4 /* Anoying Alarm Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Anoying Alarm Logo.jpg"; path = "../../Anoying Alarm Logo.jpg"; sourceTree = "<group>"; };
 		FD1B3B0B28F87A660039CFBB /* Annoying Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Annoying Alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1B3B0E28F87A660039CFBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD1B3B1028F87A660039CFBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				FD1B3B1028F87A660039CFBB /* SceneDelegate.swift */,
 				FD078C04293F13C5007943AC /* ViewController.swift */,
 				FD1B3B1428F87A660039CFBB /* Main.storyboard */,
-				FD07C0E92912083600A018C4 /* Anoying Alarm Logo.jpg */,
 				FD1B3B1728F87A690039CFBB /* Assets.xcassets */,
 				FD1B3B1928F87A690039CFBB /* LaunchScreen.storyboard */,
 				FD1B3B1C28F87A690039CFBB /* Info.plist */,
@@ -237,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD07C0EA2912083600A018C4 /* Anoying Alarm Logo.jpg in Resources */,
 				FD3D7838294F9E8A00E86C12 /* alarmclock.mp3 in Resources */,
 				FD1B3B1B28F87A690039CFBB /* LaunchScreen.storyboard in Resources */,
 				FD1B3B1828F87A690039CFBB /* Assets.xcassets in Resources */,
