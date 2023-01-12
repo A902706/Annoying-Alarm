@@ -66,6 +66,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QDe-qs-jDA">
+                                <rect key="frame" x="90" y="364" width="210" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="foJ-rK-er0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o4d-9e-WmD"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
@@ -77,6 +85,9 @@
                             <constraint firstItem="ZFB-pK-lSj" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-18" id="Ddh-tX-2b7"/>
                             <constraint firstItem="SKy-oA-t3a" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" constant="-108" id="F5Q-I0-Q7e"/>
                             <constraint firstItem="jvl-j1-cta" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" constant="-108" id="F8x-cM-UXS"/>
+                            <constraint firstItem="QDe-qs-jDA" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="LAV-qb-00Y"/>
+                            <constraint firstItem="QDe-qs-jDA" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="NIj-7o-Bpa"/>
+                            <constraint firstItem="QDe-qs-jDA" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-41" id="NVP-Ym-xRc"/>
                             <constraint firstItem="SKy-oA-t3a" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="76.5" id="SqD-CV-6V9"/>
                             <constraint firstItem="w9u-IZ-3Fd" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-18.5" id="aJ1-yD-3qS"/>
                             <constraint firstItem="qRp-nT-MmU" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-17.829999999999998" id="aOC-fJ-dse"/>
@@ -86,6 +97,7 @@
                             <constraint firstItem="qRp-nT-MmU" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" constant="122" id="jka-Jb-35w"/>
                             <constraint firstItem="Dq2-s9-XV6" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" constant="-120" id="lIx-A6-lyJ"/>
                             <constraint firstItem="jvl-j1-cta" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="29.5" id="p27-fe-jTo"/>
+                            <constraint firstItem="QDe-qs-jDA" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-41" id="w7g-4d-Dqr"/>
                             <constraint firstItem="Fvo-NV-zwu" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="xG4-Pp-MRZ"/>
                         </constraints>
                     </view>
@@ -98,6 +110,7 @@
                         <outlet property="eventNameTextField" destination="s9i-1N-Gzq" id="18N-PL-cTB"/>
                         <outlet property="hoursOfEventCountLabel" destination="w9u-IZ-3Fd" id="nOk-Z3-mU7"/>
                         <outlet property="minutesOfEventCountLabel" destination="ZFB-pK-lSj" id="Fse-5w-rko"/>
+                        <outlet property="questionPortion" destination="QDe-qs-jDA" id="71o-77-hP1"/>
                         <outlet property="secondsOfEventCountLabel" destination="qRp-nT-MmU" id="x9I-gb-cJ6"/>
                     </connections>
                 </viewController>

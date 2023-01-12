@@ -25,6 +25,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var minutesOfEventCountLabel: UILabel!
     //The seconds displayed by the countdown
     @IBOutlet weak var secondsOfEventCountLabel: UILabel!
+    //Question view
+    
+    @IBOutlet weak var questionPortion: UITextField!
     //Define timer for countdown time
     var timer : Timer?
     
@@ -46,11 +49,28 @@ class ViewController: UIViewController {
             print(error.description)
         }
     }
-    //Asks question 1+1? all raandom though
+    
+    
+    //Prints question Ex: 1+1 through raandom gen
     func question() {
         let numberOne = Int.random(in: 1..<100)
         let numberTwo = Int.random(in: 1..<100)
-        print("what is ", numberOne, "(Future opperator)", numberTwo)
+        let opperator = Int.random(in: 1..<3)
+        self.questionPortion.isHidden = false
+        
+        if opperator == 1{
+            self.questionPortion.text = "what is \(numberOne) + \(numberTwo) Enter Below"
+         
+        }
+        else if opperator == 2{
+            self.questionPortion.text = "what is \(numberOne) - \(numberTwo) Enter Below"
+         
+        }
+        else{
+            print("fix me pls")
+        }
+
+     
     }
     
     
@@ -152,7 +172,7 @@ class ViewController: UIViewController {
     @IBAction func eventNameWrite(_ sender: Any) {
         //Press return to close the keyboard
         view.endEditing(true)
-        //Assign the content of textfield to ventNameTextField
+        //Assign the content of textfield to NameTextField
         eventNameLabel.text = eventNameTextField.text
     }
     
