@@ -74,6 +74,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c6F-Zc-b7X">
+                                <rect key="frame" x="90" y="406" width="210" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="cDi-qh-Euw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="answer:" destination="lhc-DX-fnF" eventType="editingDidEnd" id="Kch-St-roA"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o4d-9e-WmD"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
@@ -81,6 +92,7 @@
                             <constraint firstItem="s9i-1N-Gzq" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-83" id="0wd-TZ-3RO"/>
                             <constraint firstItem="w9u-IZ-3Fd" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" constant="-40" id="1Ex-is-N4Y"/>
                             <constraint firstItem="ZFB-pK-lSj" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" constant="44" id="5Ss-Dc-Uu7"/>
+                            <constraint firstItem="c6F-Zc-b7X" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="8Yo-9b-TAJ"/>
                             <constraint firstItem="s9i-1N-Gzq" firstAttribute="leading" secondItem="o4d-9e-WmD" secondAttribute="leading" constant="40" id="CB3-fP-pTY"/>
                             <constraint firstItem="ZFB-pK-lSj" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-18" id="Ddh-tX-2b7"/>
                             <constraint firstItem="SKy-oA-t3a" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" constant="-108" id="F5Q-I0-Q7e"/>
@@ -97,12 +109,14 @@
                             <constraint firstItem="qRp-nT-MmU" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" constant="122" id="jka-Jb-35w"/>
                             <constraint firstItem="Dq2-s9-XV6" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" constant="-120" id="lIx-A6-lyJ"/>
                             <constraint firstItem="jvl-j1-cta" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="29.5" id="p27-fe-jTo"/>
+                            <constraint firstItem="c6F-Zc-b7X" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="1" id="sHa-iS-Dd1"/>
                             <constraint firstItem="QDe-qs-jDA" firstAttribute="centerY" secondItem="WzX-tH-c0Y" secondAttribute="centerY" constant="-41" id="w7g-4d-Dqr"/>
                             <constraint firstItem="Fvo-NV-zwu" firstAttribute="centerX" secondItem="WzX-tH-c0Y" secondAttribute="centerX" id="xG4-Pp-MRZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Time/Date" id="MgI-yP-Dk4"/>
                     <connections>
+                        <outlet property="AnswerPortion" destination="c6F-Zc-b7X" id="UlK-1Z-JVy"/>
                         <outlet property="dayOfEventCountLabel" destination="Dq2-s9-XV6" id="Byq-kB-9y5"/>
                         <outlet property="eventDateLabel" destination="jvl-j1-cta" id="Zek-3b-1T1"/>
                         <outlet property="eventDateSelectDatePicker" destination="Fvo-NV-zwu" id="JjZ-5c-9vy"/>

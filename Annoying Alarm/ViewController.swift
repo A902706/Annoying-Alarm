@@ -26,8 +26,10 @@ class ViewController: UIViewController {
     //The seconds displayed by the countdown
     @IBOutlet weak var secondsOfEventCountLabel: UILabel!
     //Question view
-    
     @IBOutlet weak var questionPortion: UITextField!
+    //Answer portion
+    @IBOutlet weak var answerPortion: UITextField!
+    
     //Define timer for countdown time
     var timer : Timer?
     
@@ -42,7 +44,6 @@ class ViewController: UIViewController {
 
             player.prepareToPlay()
             player.numberOfLoops = -1
-            print("omg")
             player.play()
             
         } catch let error as NSError {
@@ -53,24 +54,51 @@ class ViewController: UIViewController {
     
     //Prints question Ex: 1+1 through raandom gen
     func question() {
-        let numberOne = Int.random(in: 1..<100)
-        let numberTwo = Int.random(in: 1..<100)
+        let numberOne = Int.random(in: 1..<50)
+        let numberTwo = Int.random(in: 1..<13)
         let opperator = Int.random(in: 1..<3)
         self.questionPortion.isHidden = false
+        self.answerPortion.isHidden = false
+        let answer = numberOne + numberTwo
         
         if opperator == 1{
             self.questionPortion.text = "what is \(numberOne) + \(numberTwo) Enter Below"
-         
+            
+            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
+                let guess = self.answerPortion.text
+                print(guess!)
+                    
+                    if "\(answer)" == "\(guess!)" {
+                        self.timer?.invalidate()
+                        self.player?.stop()
+                        self.questionPortion.isHidden = true
+                        self.answerPortion.isHidden = true
+                        print("OMG WORKS1")
+                        
+                    }
+            }
         }
+         
         else if opperator == 2{
             self.questionPortion.text = "what is \(numberOne) - \(numberTwo) Enter Below"
-         
+            let answer = numberOne - numberTwo
+            print(answer)
+            let guess = self.answerPortion.text
+              print(guess!)
+                if "\(answer)" == "\(guess!)" {
+                    self.timer?.invalidate()
+                    self.player?.stop()
+                    self.questionPortion.isHidden = true
+                    self.answerPortion.isHidden = true
+                    print("OMG WORKS2")
+                
+                }
+            
         }
         else{
             print("fix me pls")
         }
-
-     
+        
     }
     
     
@@ -154,24 +182,29 @@ class ViewController: UIViewController {
                 self.playSound()
                 self.question()
               
-                //FOR Future use once I get the solution stuff going player.stop()
+            
             }
         }
         
     }
     
     
-    
+    //BELOW are Action functions
     //custom dateCountStart
     @IBAction func dateSelect(_ sender: Any) {
         //excutes when writtendateCountStart()function
         dateCountStart()
     }
-    
+   
+    @IBAction func  answer(_ sender: Any) {
+        view.endEditing(true)
+        
+    }
     // UITextField action
     @IBAction func eventNameWrite(_ sender: Any) {
         //Press return to close the keyboard
         view.endEditing(true)
+        
         //Assign the content of textfield to NameTextField
         eventNameLabel.text = eventNameTextField.text
     }
